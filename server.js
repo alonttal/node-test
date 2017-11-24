@@ -47,6 +47,12 @@ app.get('/about', (request, response) => {
     });
 });
 
+app.get('/projects', (request, response) => {
+    response.render('projects',{
+        pageTitle: 'Projects'
+    });
+});
+
 app.get('/bad', (request, response) => {
     response.send({
         error: 'Error handling request'
